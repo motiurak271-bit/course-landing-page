@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.landing-container {
+    display: flex;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.content-side, .form-side {
+    padding: 40px;
+    flex: 1;
+}
+
+.content-side h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #00f2fe;
+}
+
+.content-side ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.content-side ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.form-side {
+    background: #fff;
+    color: #333;
+}
+
+.form-side h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #2a5298;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.cta-btn {
+    width: 100%;
+    padding: 12px;
+    background: #ff4757;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cta-btn:hover {
+    background: #ff6b81;
+}
+
+.error-msg {
+    color: red;
+    font-size: 0.85rem;
+    display: block;
+    margin-top: 5px;
+}
+
+/* মোবাইল রেসপন্সিভ করার জন্য */
+@media (max-width: 768px) {
+    .landing-container {
+        flex-direction: column;
+    }
+}
